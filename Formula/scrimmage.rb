@@ -11,9 +11,9 @@ class Scrimmage < Formula
   depends_on "cmake" => :build
   depends_on "ninja" => :build
   depends_on "gcc"
-  depends_on "Boost"
-  depends_on "Eigen"
-  depends_on "GeographicLib"
+  depends_on "boost"
+  depends_on "eigen"
+  depends_on "geographiclib"
   depends_on "vtk@6.2"
   depends_on "OpenCV"
   depends_on "pybind11"
