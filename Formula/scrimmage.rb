@@ -8,28 +8,28 @@ class Scrimmage < Formula
   sha256 "bb5bf58a32f72637b0c96d7fc9f7cad9718ba769d380d815f16f36ccf0c15f83"
 
   # dependencies
-  depends_on "cmake" => :build
-  depends_on "ninja" => :build
   depends_on "autoconf"
   depends_on "automake"
   depends_on "bullet"
   depends_on "boost"
-  depends_on "ccache"
+  depends_on "ccache" => :build
+  depends_on "cmake" => :build
   depends_on "doxygen"
   depends_on "eigen"
   depends_on "gcc"
   depends_on "geographiclib"
   depends_on "graphviz"
-  depends_on "grpc"
+  depends_on "grpc" => :optional
   depends_on "libtool"
+  depends_on "ninja" => :build
   depends_on "parallel"
-  depends_on "pybind11"
+  depends_on "pybind11" => :optional
   depends_on "python"
   depends_on "rapidxml"
   depends_on "unzip"
   depends_on "vtk@6.2"
   depends_on "wxpython"
-  depends_on "OpenCV"
+  depends_on "opencv" => :optional
 
   def install
     args = std_cmake_args + %W[
