@@ -9,7 +9,8 @@ class VtkAT62 < Formula
   head "https://github.com/Kitware/VTK.git"
 
   bottle do
-    root_url "https://github.com/crichardson332/homebrew-crich_brews/releases/download/v0.2.1/vtk.6.2-6.2.0.mojave.bottle.tar.gz"
+    root_url "https://github.com/crichardson332/homebrew-crich_brews/releases/download/v0.2.1"
+    name "vtk.6.2"
     sha256 "6d3e055f40c46216a5533ea656de44c5f0f2ee19c43c7fe58b5d7d922b9b1670" => :mojave
   end
 
