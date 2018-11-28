@@ -8,7 +8,12 @@ class VtkAT62 < Formula
   sha256 "a59f1fa0404bb4770fb7b76565a92538d9324b2ec04ea8e2cc51f67467d15c49"
   head "https://github.com/Kitware/VTK.git"
 
- option "without-python@2", "Build without python2 support"
+  bottle do
+    root_url "https://github.com/crichardson332/homebrew-crich_brews/releases/download/v0.2.1"
+    sha256 "6d3e055f40c46216a5533ea656de44c5f0f2ee19c43c7fe58b5d7d922b9b1670" => :mojave
+  end
+
+  option "without-python@2", "Build without python2 support"
 
   deprecated_option "without-python" => "without-python@2"
 
