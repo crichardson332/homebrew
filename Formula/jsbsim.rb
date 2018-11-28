@@ -16,7 +16,7 @@ class Jsbsim < Formula
     ]
 
     mkdir "build" do
-      system "cmake", "..", args
+      system "cmake", "..", *args
       system "ninja"
       system "ninja", "install"
     end
