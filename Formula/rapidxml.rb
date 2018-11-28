@@ -8,7 +8,7 @@ class Rapidxml < Formula
   sha256 "bc4103ea52fd564aaadd4302c5dfa73b39af460623cfceb1f6cbd5f9ec5f8f83"
 
   bottle do
-    root_url "https://github.com/crichardson332/rapidxml/releases/download/v1.13"
+    root_url "https://bintray.com/crichardson332/bottles/download_file?file_path="
     cellar :any_skip_relocation
     sha256 "f18362484e7a167641150cea7bb4276644cecf0b224a33521226b173951230c4" => :mojave
   end
