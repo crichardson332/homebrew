@@ -7,6 +7,12 @@ class Rapidxml < Formula
   url "https://github.com/crichardson332/rapidxml/archive/v1.13.tar.gz"
   sha256 "bc4103ea52fd564aaadd4302c5dfa73b39af460623cfceb1f6cbd5f9ec5f8f83"
 
+  bottle do
+    root_url "https://github.com/crichardson332/rapidxml/releases/download/v1.13"
+    cellar :any_skip_relocation
+    sha256 "f18362484e7a167641150cea7bb4276644cecf0b224a33521226b173951230c4" => :mojave
+  end
+
   depends_on "cmake" => :build
   needs :cxx14
 
