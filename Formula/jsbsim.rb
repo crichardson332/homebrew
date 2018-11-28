@@ -10,6 +10,12 @@ class Jsbsim < Formula
   depends_on "cmake" => :build
   depends_on "ninja" => :build
 
+  bottle do
+    root_url "https://bintray.com/crichardson332/bottles/download_file?file_path="
+    cellar :any_skip_relocation
+    sha256 "1a99a0d0ffba6bf6652cdd4b9d91aca1bd5e2e2aa346e2d46b3fb8cecce8f668" => :mojave
+  end
+
   def install
     args = std_cmake_args + %W[
       -GNinja
