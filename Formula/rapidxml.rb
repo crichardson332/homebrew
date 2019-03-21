@@ -14,7 +14,6 @@ class Rapidxml < Formula
   end
 
   depends_on "cmake" => :build
-  needs :cxx14
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
