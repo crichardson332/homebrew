@@ -23,6 +23,7 @@ class Scrimmage < Formula
   depends_on "libtool"
   depends_on "ninja" => :build
   depends_on "parallel"
+  depends_on "protobuf"
   depends_on "pybind11" => :optional
   depends_on "python"
   depends_on "rapidxml"
