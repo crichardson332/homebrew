@@ -1,4 +1,12 @@
-# Scrimmage - macOS
+# DEPRECATED
+
+MacOS is no longer supported by SCRIMMAGE developers. Legacy instructions
+for building on macOS are left here for any user wishing to experiment on
+their own, but scrimmage is not guaranteed to build on macOS out of the box.
+Pull requests for patches are still welcome in scrimmage core, but macOS
+support will no longer be maintained.
+
+## Scrimmage - macOS
 
 To build scrimmage from source on macOS, you must have command line tools
 installed. If you have never done so, paste this command into a Terminal prompt
